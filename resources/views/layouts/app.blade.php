@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Devstagram - @yield('titulo')</title>
+        <title>Sophianum - @yield('titulo')</title>
         @vite('resources/css/app.css')
 
     </head>
@@ -12,7 +12,7 @@
         <header class="p-5 border-b bg-white shadoe">
             <div class="container mx-auto flex justify-between items-center">
                 <h1 class="text-3xl font-black">
-                    Devstagram
+                    Sophianum
                 </h1>
     
                 <nav class="flex gap-3 items-center">
@@ -31,7 +31,7 @@
         </main>
 
         <footer class="mt-10 text-center p-5 text-gray-500 font-bold uppercase">
-            DevStagram - Todos los derechos reservados
+            Sophianum - Todos los derechos reservados
             {{ now()->year }}
         </footer>
 
