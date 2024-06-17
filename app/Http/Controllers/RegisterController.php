@@ -32,8 +32,14 @@ class RegisterController extends Controller
             'password' => 'required|confirmed|min:6'
         ]);
 
+        User::create([
+            'name' => $request->name,
+            'username' => Str::slug( $request->username ),
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
 
-        dd('creando registro ....');
+        
     }
 
 }
